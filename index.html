@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · Gas Monitor</title>
+<style>
+  :root { --fg:#1c1b1f; --bg:#fff; --muted:#5f6368; --accent:#0b6b3a; --line:#e1e3e1; }
+  @media (prefers-color-scheme: dark) {
+    :root { --fg:#e6e1e5; --bg:#141316; --muted:#a9a6ad; --accent:#6fd39b; --line:#2e2c31; }
+  }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:44rem; margin:0 auto; padding:2rem 1rem 4rem; }
+  h1 { font-size:1.8rem; margin:0 0 .25rem; }
+  h2 { font-size:1.25rem; margin:2rem 0 .5rem; padding-top:1rem; border-top:1px solid var(--line); }
+  p, li { margin:.5rem 0; }
+  .meta { color:var(--muted); margin:0 0 1.5rem; }
+  a { color:var(--accent); }
+  table { border-collapse:collapse; width:100%; font-size:.95rem; }
+  th, td { text-align:left; vertical-align:top; padding:.5rem; border-bottom:1px solid var(--line); }
+</style>
+</head>
+<body>
+<main>
+<h1>Política de privacidad de Gas Monitor</h1>
+<p class="meta">Última actualización: 1 de octubre de 2026 · Aplicación para Android (cl.gasmonitor.full)</p>
+
+<p>Gas Monitor estima el consumo de combustible de tu vehículo a partir del GPS del teléfono y del perfil del vehículo. Esta política explica qué datos usa la app, para qué, y con quién se comparten. En resumen: <strong>tus datos se quedan en tu teléfono</strong>. No hay cuentas, servidores propios, publicidad ni analítica.</p>
+
+<h2>1. Datos que la app usa</h2>
+<table>
+  <thead><tr><th>Dato</th><th>Para qué</th><th>Dónde se guarda</th></tr></thead>
+  <tbody>
+    <tr><td>Ubicación precisa y aproximada (GPS), mientras registras un viaje</td><td>Calcular distancia, velocidad, pendiente y consumo estimado, y dibujar la ruta</td><td>Solo en el teléfono (base de datos local)</td></tr>
+    <tr><td>Datos de tus vehículos (marca, modelo, año, motor, etc.)</td><td>Estimar el consumo</td><td>Solo en el teléfono</td></tr>
+    <tr><td>Cargas de combustible que ingresas (litros, precio, kilometraje)</td><td>Calibrar la estimación con consumos reales</td><td>Solo en el teléfono</td></tr>
+    <tr><td>Historial de viajes y sus rutas</td><td>Mostrarte el historial y los detalles</td><td>Solo en el teléfono</td></tr>
+    <tr><td>Preferencias (unidades, moneda, tema, precisión del GPS, mapa)</td><td>Personalizar la app</td><td>Solo en el teléfono</td></tr>
+  </tbody>
+</table>
+<p>La app no te pide nombre, correo, teléfono ni ningún otro dato de identificación, y no accede a tus contactos, fotos, micrófono ni cámara.</p>
+
+<h2>2. Permisos de Android</h2>
+<ul>
+  <li><strong>Ubicación (precisa y aproximada)</strong>: solo mientras usas la app. La app <em>no</em> solicita ubicación en segundo plano. Si dejas un viaje en curso y sales de la app, el registro continúa mediante un servicio en primer plano que muestra una notificación visible mientras dure el viaje.</li>
+  <li><strong>Notificaciones</strong>: para mostrar la notificación del viaje en curso.</li>
+  <li><strong>Servicio en primer plano y mantener la pantalla activa</strong>: para que el registro no se interrumpa durante el viaje.</li>
+  <li><strong>Acceso a Internet</strong>: únicamente para descargar el fondo del mapa (ver sección 3).</li>
+</ul>
+
+<h2>3. Datos que salen del teléfono</h2>
+<p>La app no tiene servidores propios y no envía tus datos a nadie. Hay una sola excepción, que puedes desactivar:</p>
+<ul>
+  <li><strong>Fondo del mapa (OpenStreetMap)</strong>. Para mostrar el mapa de un viaje, la app descarga imágenes del mapa desde <code>tile.openstreetmap.org</code>, un servicio de la Fundación OpenStreetMap. Al hacerlo, ese servicio recibe tu dirección IP y las coordenadas de los cuadros del mapa que se piden, lo que revela tu zona aproximada. <strong>Las rutas, los consumos y el resto de tus datos no se envían.</strong> Puedes desactivarlo en <em>Ajustes → Mapa con conexión a Internet</em>; sin él, la ruta se dibuja igualmente y todo funciona sin conexión. La política de privacidad de OpenStreetMap está en <a href="https://osmfoundation.org/wiki/Privacy_Policy">osmfoundation.org/wiki/Privacy_Policy</a>.</li>
+  <li><strong>Enlaces externos</strong>. Algunas pantallas ofrecen enlaces a fuentes de datos (por ejemplo, organismos oficiales). Se abren en tu navegador y quedan sujetos a la política de ese sitio.</li>
+</ul>
+<p>El catálogo de vehículos viene incluido dentro de la app y se consulta sin conexión. No vendemos ni compartimos datos personales con terceros, y no usamos SDK de publicidad, analítica ni informes de fallos.</p>
+
+<h2>4. Respaldo y exportación</h2>
+<p>La app excluye sus datos de la copia de seguridad en la nube de Android y de la transferencia entre dispositivos. Si quieres respaldar o mover tus datos, puedes usar <em>Ajustes → Respaldo</em>, que genera un archivo y te deja elegir dónde guardarlo o con qué aplicación compartirlo. Ese destino lo eliges tú y queda bajo la política de esa aplicación o servicio. Gas Monitor no recibe el archivo.</p>
+
+<h2>5. Conservación y eliminación</h2>
+<p>Los datos permanecen en tu teléfono hasta que los elimines. Al desinstalar la app, Android borra todos sus datos locales. Los archivos de respaldo que hayas guardado fuera de la app debes borrarlos tú.</p>
+
+<h2>6. Seguridad</h2>
+<p>Como los datos no salen del teléfono, su protección depende de la seguridad de tu dispositivo (bloqueo de pantalla, cifrado de Android). La conexión al servicio de mapas usa HTTPS.</p>
+
+<h2>7. Menores de edad</h2>
+<p>Gas Monitor no está dirigida a niños y no recopila a sabiendas información de menores.</p>
+
+<h2>8. Tus derechos</h2>
+<p>Como la app no recopila datos en nuestros servidores, no tenemos datos tuyos que acceder, rectificar o borrar: todo está bajo tu control en tu dispositivo. Si tienes dudas o quieres ejercer cualquier derecho que te otorgue la ley aplicable en tu país (por ejemplo, la Ley 19.628 de Chile), escríbenos.</p>
+
+<h2>9. Cambios a esta política</h2>
+<p>Si la app cambia la forma en que trata los datos, actualizaremos esta página y la fecha de arriba antes de publicar el cambio.</p>
+
+<h2>10. Contacto</h2>
+<p>Responsable: Tomás (desarrollador de Gas Monitor) · Correo: <a href="mailto:sclaudecode@gmail.com">sclaudecode@gmail.com</a></p>
+</main>
+</body>
+</html>
