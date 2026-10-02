@@ -24,9 +24,9 @@
 <body>
 <main>
 <h1>Política de privacidad de Gas Monitor</h1>
-<p class="meta">Última actualización: 1 de octubre de 2026 · Aplicación para Android (cl.gasmonitor.full)</p>
+<p class="meta">Última actualización: 2 de octubre de 2026 · Aplicación para Android (cl.gasmonitor.full)</p>
 
-<p>Gas Monitor estima el consumo de combustible de tu vehículo a partir del GPS del teléfono y del perfil del vehículo. Esta política explica qué datos usa la app, para qué, y con quién se comparten. En resumen: <strong>tus datos se quedan en tu teléfono</strong>. No hay cuentas, servidores propios, publicidad ni analítica.</p>
+<p>Gas Monitor estima el consumo de combustible de tu vehículo a partir del GPS del teléfono y del perfil del vehículo. Esta política explica qué datos usa la app, para qué, y con quién se comparten. En resumen: <strong>tus datos se quedan en tu teléfono</strong>. Crear una cuenta y sincronizar con la nube es <strong>opcional</strong>: sin cuenta, nada sale del teléfono. No hay publicidad ni analítica.</p>
 
 <h2>1. Datos que la app usa</h2>
 <table>
@@ -36,46 +36,56 @@
     <tr><td>Datos de tus vehículos (marca, modelo, año, motor, etc.)</td><td>Estimar el consumo</td><td>Solo en el teléfono</td></tr>
     <tr><td>Cargas de combustible que ingresas (litros, precio, kilometraje)</td><td>Calibrar la estimación con consumos reales</td><td>Solo en el teléfono</td></tr>
     <tr><td>Historial de viajes y sus rutas</td><td>Mostrarte el historial y los detalles</td><td>Solo en el teléfono</td></tr>
+    <tr><td>Mantenimiento que registras (tipo, fecha, kilometraje, costo)</td><td>Recordarte tus próximos servicios</td><td>Solo en el teléfono</td></tr>
     <tr><td>Preferencias (unidades, moneda, tema, precisión del GPS, mapa)</td><td>Personalizar la app</td><td>Solo en el teléfono</td></tr>
+    <tr><td><strong>Correo electrónico</strong>, <em>solo si creas una cuenta</em></td><td>Iniciar sesión (te enviamos un enlace de acceso) y sincronizar tus datos</td><td>En el servicio de cuentas (ver sección 3)</td></tr>
+    <tr><td><strong>Los datos que tú elijas sincronizar</strong>, <em>solo si activas la sincronización</em></td><td>Tenerlos en más de un dispositivo</td><td>En tu cuenta, en el servicio de sincronización (ver sección 3)</td></tr>
   </tbody>
 </table>
-<p>La app no te pide nombre, correo, teléfono ni ningún otro dato de identificación, y no accede a tus contactos, fotos, micrófono ni cámara.</p>
+<p>Sin cuenta, la app no te pide nombre, correo, teléfono ni ningún otro dato de identificación. No accede a tus contactos, fotos, micrófono ni cámara.</p>
 
 <h2>2. Permisos de Android</h2>
 <ul>
   <li><strong>Ubicación (precisa y aproximada)</strong>: solo mientras usas la app. La app <em>no</em> solicita ubicación en segundo plano. Si dejas un viaje en curso y sales de la app, el registro continúa mediante un servicio en primer plano que muestra una notificación visible mientras dure el viaje.</li>
   <li><strong>Notificaciones</strong>: para mostrar la notificación del viaje en curso.</li>
   <li><strong>Servicio en primer plano y mantener la pantalla activa</strong>: para que el registro no se interrumpa durante el viaje.</li>
-  <li><strong>Acceso a Internet</strong>: únicamente para descargar el fondo del mapa (ver sección 3).</li>
+  <li><strong>Acceso a Internet</strong>: para descargar el fondo del mapa y, si tú lo usas, para iniciar sesión y sincronizar (ver sección 3).</li>
 </ul>
 
 <h2>3. Datos que salen del teléfono</h2>
-<p>La app no tiene servidores propios y no envía tus datos a nadie. Hay una sola excepción, que puedes desactivar:</p>
+<p>Sin cuenta, la app no envía tus datos a nadie. Estas son las únicas ocasiones en que algo sale del teléfono:</p>
 <ul>
+  <li><strong>Cuenta y sincronización (opcional, Supabase)</strong>. Si creas una cuenta, tu correo se guarda en el servicio de <a href="https://supabase.com/privacy">Supabase</a>, que aloja la cuenta y la base de datos, y envía el correo con el enlace de acceso. Si además activas la sincronización, <strong>solo se suben los tipos de datos que tú aceptas</strong> en <em>Ajustes → Cuenta y sincronización</em> (vehículos y calibración, cargas y precios, mantenimiento, resumen de viajes y, aparte, las ubicaciones de las estaciones donde cargas). <strong>Los recorridos GPS punto a punto no se sincronizan.</strong> La app nunca sincroniza por su cuenta: solo cuando tocas <em>Sincronizar ahora</em>. Cada cuenta ve únicamente sus propios datos. Supabase actúa como proveedor que almacena los datos por encargo nuestro; no los usamos para publicidad ni los vendemos.</li>
   <li><strong>Fondo del mapa (OpenStreetMap)</strong>. Para mostrar el mapa de un viaje, la app descarga imágenes del mapa desde <code>tile.openstreetmap.org</code>, un servicio de la Fundación OpenStreetMap. Al hacerlo, ese servicio recibe tu dirección IP y las coordenadas de los cuadros del mapa que se piden, lo que revela tu zona aproximada. <strong>Las rutas, los consumos y el resto de tus datos no se envían.</strong> Puedes desactivarlo en <em>Ajustes → Mapa con conexión a Internet</em>; sin él, la ruta se dibuja igualmente y todo funciona sin conexión. La política de privacidad de OpenStreetMap está en <a href="https://osmfoundation.org/wiki/Privacy_Policy">osmfoundation.org/wiki/Privacy_Policy</a>.</li>
   <li><strong>Enlaces externos</strong>. Algunas pantallas ofrecen enlaces a fuentes de datos (por ejemplo, organismos oficiales). Se abren en tu navegador y quedan sujetos a la política de ese sitio.</li>
 </ul>
-<p>El catálogo de vehículos viene incluido dentro de la app y se consulta sin conexión. No vendemos ni compartimos datos personales con terceros, y no usamos SDK de publicidad, analítica ni informes de fallos.</p>
+<p>El catálogo de vehículos viene incluido dentro de la app y se consulta sin conexión. No vendemos ni compartimos datos personales con terceros, y no usamos SDK de publicidad, analítica ni informes de fallos. Fuera de lo descrito arriba, no hay otros envíos de datos.</p>
 
 <h2>4. Respaldo y exportación</h2>
 <p>La app excluye sus datos de la copia de seguridad en la nube de Android y de la transferencia entre dispositivos. Si quieres respaldar o mover tus datos, puedes usar <em>Ajustes → Respaldo</em>, que genera un archivo y te deja elegir dónde guardarlo o con qué aplicación compartirlo. Ese destino lo eliges tú y queda bajo la política de esa aplicación o servicio. Gas Monitor no recibe el archivo.</p>
 
 <h2>5. Conservación y eliminación</h2>
 <p>Los datos permanecen en tu teléfono hasta que los elimines. Al desinstalar la app, Android borra todos sus datos locales. Los archivos de respaldo que hayas guardado fuera de la app debes borrarlos tú.</p>
+<p>Si usas una cuenta, puedes <strong>borrarla en cualquier momento</strong> desde <em>Ajustes → Cuenta y sincronización → Borrar mi cuenta y mis datos del servidor</em>. Eso elimina tu correo y todo lo que hayas subido; los datos de tu teléfono no se tocan. Cerrar sesión no borra nada del servidor. Borrar un dato en la app no siempre lo elimina del servidor: si quieres que no quede nada, borra la cuenta.</p>
 
-<h2>6. Seguridad</h2>
-<p>Como los datos no salen del teléfono, su protección depende de la seguridad de tu dispositivo (bloqueo de pantalla, cifrado de Android). La conexión al servicio de mapas usa HTTPS.</p>
+<h2 id="eliminar-cuenta">6. Cómo eliminar tu cuenta y tus datos</h2>
+<p><strong>Desde la app:</strong> abre <em>Ajustes → Cuenta y sincronización → Borrar mi cuenta y mis datos del servidor</em> y confirma. Se elimina tu correo y todo lo que hayas sincronizado, y la cuenta deja de existir. Los datos que están en tu teléfono no se tocan; se borran al desinstalar la app o desde sus ajustes.</p>
+<p><strong>Si ya no tienes la app:</strong> escribe a <a href="mailto:sclaudecode@gmail.com?subject=Eliminar%20mi%20cuenta%20de%20Gas%20Monitor">sclaudecode@gmail.com</a> desde el correo con el que creaste la cuenta, con el asunto «Eliminar mi cuenta de Gas Monitor». Eliminaremos la cuenta y los datos asociados y te confirmaremos por el mismo correo.</p>
+<p>Si nunca creaste una cuenta, no hay nada que eliminar en nuestros servidores: tus datos solo están en tu teléfono.</p>
 
-<h2>7. Menores de edad</h2>
+<h2>7. Seguridad</h2>
+<p>Los datos locales dependen de la seguridad de tu dispositivo (bloqueo de pantalla, cifrado de Android). Las conexiones al servicio de mapas y al de cuentas usan HTTPS. En el servidor, cada fila de datos está asociada a tu cuenta y las reglas de acceso impiden que otra cuenta la lea o la modifique. El acceso a la cuenta es por enlace de un solo uso enviado a tu correo, sin contraseña.</p>
+
+<h2>8. Menores de edad</h2>
 <p>Gas Monitor no está dirigida a niños y no recopila a sabiendas información de menores.</p>
 
-<h2>8. Tus derechos</h2>
-<p>Como la app no recopila datos en nuestros servidores, no tenemos datos tuyos que acceder, rectificar o borrar: todo está bajo tu control en tu dispositivo. Si tienes dudas o quieres ejercer cualquier derecho que te otorgue la ley aplicable en tu país (por ejemplo, la Ley 19.628 de Chile), escríbenos.</p>
+<h2>9. Tus derechos</h2>
+<p>Sin cuenta, no tenemos datos tuyos: todo está bajo tu control en tu dispositivo. Con cuenta, puedes ver y corregir tus datos desde la app, y borrarlos con <em>Borrar mi cuenta</em>. Si tienes dudas o quieres ejercer cualquier derecho que te otorgue la ley aplicable en tu país (por ejemplo, la Ley 19.628 de Chile), escríbenos.</p>
 
-<h2>9. Cambios a esta política</h2>
+<h2>10. Cambios a esta política</h2>
 <p>Si la app cambia la forma en que trata los datos, actualizaremos esta página y la fecha de arriba antes de publicar el cambio.</p>
 
-<h2>10. Contacto</h2>
+<h2>11. Contacto</h2>
 <p>Responsable: Tomás (desarrollador de Gas Monitor) · Correo: <a href="mailto:sclaudecode@gmail.com">sclaudecode@gmail.com</a></p>
 </main>
 </body>
